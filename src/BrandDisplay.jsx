@@ -2,15 +2,7 @@ import React from "react";
 import "./styles.css";
 
 export default function BrandDisplay(props) {
-  const filter = props.filter;
-  // var imageName = require("https://s3-ap-southeast-1.amazonaws.com/he-public-data/Swedish_beerb2d62a0.jpg");
-  let data = [...props.data];
-  data = data.filter((beer) => {
-    if (beer.name.toLowerCase().includes(filter.toLowerCase())) {
-      return true;
-    }
-    return false;
-  });
+  const { data } = props;
   return (
     <div id="list">
       {data.map((beer) => {

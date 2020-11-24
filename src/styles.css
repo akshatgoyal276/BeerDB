@@ -7,6 +7,11 @@
   width: 300px;
   border: 5px solid black;
 }
+#pageInput {
+  margin: 10px;
+  border: 2px solid black;
+  width: 200px;
+}
 .beerBrandCard {
   border: 2px solid black;
   text-align: left;
